@@ -1,9 +1,9 @@
-import { Facebook, Instagram, MapPin, Phone, Mail } from "lucide-react";
-import logotipoFooter from "../../assets/logoZOOM3.jpeg";
+import { Instagram, MapPin, Phone, Mail } from "lucide-react";
+import logotipoFooter from "../../assets/logoHD.jpeg";
 
 export function Footer() {
   const Viewes = () => {
-    window.open("/terminos2.pdf", "_blank");
+    window.open("/En ENVIOS HD.pdf", "_blank");
   };
   return (
     <footer
@@ -65,15 +65,15 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center max-[768px]:justify-center">
                 <Phone size={18} className="mr-2" />
-                <span>+51927613970</span>
+                <span>932183374-929185849</span>
               </li>
               <li className="flex items-center max-[768px]:flex max-[768px]:justify-center">
                 <Mail size={18} className="mr-2" />
-                <span>info@suramericacargo.com</span>
+                <span>None</span>
               </li>
               <li className="flex items-center max-[768px]:flex max-[768px]:justify-center">
                 <MapPin size={18} className="mr-2" />
-                <span>Av. Alfredo Mendiola 3471 Los Olivos, Lima</span>
+                <span>Asoc. El Molino. Mz. A Lt 30.</span>
               </li>
             </ul>
           </div>
@@ -82,16 +82,16 @@ export function Footer() {
               Síguenos
             </h3>
             <div className="flex space-x-4">
-              <a
+              {/* <a
                 href="https://www.facebook.com/people/Envios-Internacionales/61557105217820/"
                 className="bg-blue-700 p-2 rounded-full hover:bg-blue-600 transition-colors"
               >
                 <Facebook size={20} />
                 <span className="sr-only">Facebook</span>
-              </a>
+              </a> */}
 
               <a
-                href="https://www.instagram.com/envioszoom/"
+                href="https://www.instagram.com/envioshd_oficial/"
                 className="bg-blue-700 p-2 rounded-full hover:bg-blue-600 transition-colors"
               >
                 <Instagram size={20} />
@@ -101,8 +101,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-blue-700 text-center text-sm text-blue-300">
-          © {new Date().getFullYear()} Sur América Cargo. Todos los derechos
-          reservados.
+          © {new Date().getFullYear()} EnviosHD. Todos los derechos reservados.
         </div>
       </div>
     </footer>

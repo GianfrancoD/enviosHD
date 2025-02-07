@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Book, Menu, X } from "lucide-react";
-import logotipos from "../../assets/logoZOOM3.jpeg";
+import logotipos from "../../assets/logoHD.jpeg";
 import { scrollToAll } from "../../services/scrollServices";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const Viewes = () => {
-    window.open("/terminos2.pdf", "_blank");
+    window.open("/En ENVIOS HD.pdf", "_blank");
   };
 
   const toggleMenu = () => {
@@ -41,7 +41,7 @@ export function Navbar() {
                 onClick={() =>
                   scrollToAll(item.toLowerCase().replace(" ", "-"))
                 }
-                className="text-blue-600 hover:text-blue-800 transition-colors"
+                className="text-black hover:text-black/50 transition-colors"
               >
                 {item}
               </button>
@@ -49,7 +49,7 @@ export function Navbar() {
           </nav>
           <button
             onClick={() => scrollToAll("footer")}
-            className="hidden md:block bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
+            className="hidden md:block bg-blue-500  text-white px-6 py-2 rounded-full hover:bg-yellow-500 transition-colors"
           >
             Contacto
           </button>
@@ -77,7 +77,7 @@ export function Navbar() {
                 onClick={() =>
                   scrollToAll(item.toLowerCase().replace(" ", "-"))
                 }
-                className="py-2 text-blue-600 hover:text-blue-800 transition-colors"
+                className="py-2 text-blue-500 hover:text-blue-500/40 transition-colors"
               >
                 {item}
               </button>
@@ -91,7 +91,7 @@ export function Navbar() {
             <div className="flex gap-1 relative mt-8 pt-5 border-t border-grey-500 text-sm min-w-[320px]:w-28 w-auto">
               <Book width={16} />
               <button
-                className="text-blue-500 hover:text-blue-900"
+                className="text-blue-600 hover:text-blue-700"
                 onClick={Viewes}
               >
                 Terminos y Condiciones

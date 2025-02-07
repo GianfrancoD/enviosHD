@@ -10,43 +10,10 @@ export const Offices = () => {
   }
   const offices: Offices[] = [
     {
-      city: "La Victoria",
+      city: "Distrito de los olivos",
       Ofice: "Oficina Principal",
       address:
-        "Av Aviación 950 CC. Gama plaza Moda 2do piso Local SN 193 - Local ZOOM",
-      phone: "+51 927613970",
-      icon: <MapPin className="w-6 h-6 text-blue-500" />,
-    },
-    {
-      city: "Los Olivos",
-      address:
-        "Av. Alfredo Mendiola 3471, frnte a Meda Plaza, 2do piso Galeria Dolares",
-      phone: "",
-      icon: <MapPin className="w-6 h-6 text-blue-500" />,
-    },
-    {
-      city: "Santa Anita",
-      address:
-        "Av. Nicolás Ayllón N 3080 Ate - Lima. C. C. Jessie Stand W11. Frente al Mall Aventura",
-      phone: "",
-      icon: <MapPin className="w-6 h-6 text-blue-500" />,
-    },
-    {
-      city: "Breña",
-      address: "Av. Venezuela 1179 C.C Estrella Plaza Local 136",
-      phone: "",
-      icon: <MapPin className="w-6 h-6 text-blue-500" />,
-    },
-    {
-      city: "Cercado de Lima",
-      address:
-        "Av. Grau con Avancay, Stand 1069 Cercado de Lima. C.C. Señor de Luren",
-      phone: "",
-      icon: <MapPin className="w-6 h-6 text-blue-500" />,
-    },
-    {
-      city: "Chorrillos",
-      address: "Av. Defensores del Morro 666, Galeria Huayla Chorrillos",
+        "Av Naranjal con Av. universitaria Asoc. el Molino. Mz. A Lt. 30. A espaldas del Grifo Primax, a 50 Metros del Colegio Señor de los Milagros",
       phone: "",
       icon: <MapPin className="w-6 h-6 text-blue-500" />,
     },

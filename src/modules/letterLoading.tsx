@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import logosinfondo from "../assets/logoZOOM2.png";
+import logosinfondo from "../assets/logoHD.jpeg";
 
 export function LoadingScreen() {
   return (
@@ -28,7 +28,7 @@ export function LoadingScreen() {
             {[0, 1, 2, 3, 4, 5].map((index) => (
               <motion.div
                 key={index}
-                className="w-4 h-4 bg-blue-500/40 rounded-full"
+                className="w-4 h-4 bg-yellow-500/40 rounded-full"
                 animate={{
                   y: ["0%", "-60%", "0%"],
                 }}

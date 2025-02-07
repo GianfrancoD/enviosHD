@@ -5,15 +5,16 @@ export function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1597388536236-0937ca0cc2e8?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+            "url('https://cdn.pixabay.com/photo/2016/04/30/08/35/aircraft-1362586_1280.jpg') ",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#FFAE00]/30 to-black/40" />
+
       <div className="relative container mx-auto px-4 py-12 text-center z-10 flex flex-col items-center justify-center h-full">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
           Conectando Negocios{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">
-            Globalmente
+          <span className="bg-clip-text text-transparent bg-purple-500 ">
+            Internacionalmente
           </span>
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-white mb-12 max-w-3xl mx-auto leading-relaxed">
