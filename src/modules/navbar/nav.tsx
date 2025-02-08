@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { Book, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import logotipos from "../../assets/logoHD.jpeg";
 import { scrollToAll } from "../../services/scrollServices";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const Viewes = () => {
-    window.open("/En ENVIOS HD.pdf", "_blank");
-  };
+  // const Viewes = () => {
+  //   window.open("/En ENVIOS HD.pdf", "_blank");
+  // };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -49,12 +49,12 @@ export function Navbar() {
           </nav>
           <button
             onClick={() => scrollToAll("footer")}
-            className="hidden md:block bg-blue-500  text-white px-6 py-2 rounded-full hover:bg-yellow-500 transition-colors"
+            className="hidden md:block bg-gradient-to-t from-[#FFAE00] to-[#F9E866] text-black px-6 py-2 rounded-full hover:bg-yellow-500 transition-colors "
           >
             Contacto
           </button>
           <button
-            className="md:hidden text-blue-500"
+            className="md:hidden text-yellow-500"
             onClick={toggleMenu}
             aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
           >
@@ -77,18 +77,18 @@ export function Navbar() {
                 onClick={() =>
                   scrollToAll(item.toLowerCase().replace(" ", "-"))
                 }
-                className="py-2 text-blue-500 hover:text-blue-500/40 transition-colors"
+                className="py-2 text-black hover:text-gray-500/70 transition-colors"
               >
                 {item}
               </button>
             ))}
             <button
               onClick={() => scrollToAll("footer")}
-              className="mt-4 bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
+              className="mt-4 bg-gradient-to-t from-[#FFAE00] to-[#F9E866] text-black px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
             >
               Contacto
             </button>
-            <div className="flex gap-1 relative mt-8 pt-5 border-t border-grey-500 text-sm min-w-[320px]:w-28 w-auto">
+            {/* <div className="flex gap-1 relative mt-8 pt-5 border-t border-grey-500 text-sm min-w-[320px]:w-28 w-auto">
               <Book width={16} />
               <button
                 className="text-blue-600 hover:text-blue-700"
@@ -96,7 +96,7 @@ export function Navbar() {
               >
                 Terminos y Condiciones
               </button>
-            </div>
+            </div> */}
           </nav>
         </div>
       )}

@@ -1,14 +1,14 @@
-import { Facebook, Instagram } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 type Redes = { id: number; icon: JSX.Element; name: string; url: string };
 
 const redes: Redes[] = [
-  {
-    id: 1,
-    name: "facebook",
-    icon: <Facebook size={32} className="text-blue-600" />,
-    url: "61557105217820",
-  },
+  // {
+  //   id: 1,
+  //   name: "facebook",
+  //   icon: <Facebook size={32} className="text-blue-600" />,
+  //   url: "61557105217820",
+  // },
   {
     id: 2,
     name: "instagram",

@@ -2,9 +2,9 @@ import { Instagram, MapPin, Phone, Mail } from "lucide-react";
 import logotipoFooter from "../../assets/logoHD.jpeg";
 
 export function Footer() {
-  const Viewes = () => {
-    window.open("/En ENVIOS HD.pdf", "_blank");
-  };
+  // const Viewes = () => {
+  //   window.open("/En ENVIOS HD.pdf", "_blank");
+  // };
   return (
     <footer
       className="bg-gradient-to-b from-blue-900 to-blue-500 text-white py-16"
@@ -51,14 +51,14 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-            <div className="relative mt-12 pt-5 border-t border-white/50 text-sm min-w-[320px]:w-28 w-28">
+            {/* <div className="relative mt-12 pt-5 border-t border-white/50 text-sm min-w-[320px]:w-28 w-28">
               <button
                 className="text-blue-100/50 hover:text-blue-800"
                 onClick={Viewes}
               >
                 Terminos y Condiciones
               </button>
-            </div>
+            </div> */}
           </div>
           <div className="space-y-4 max-[768px]:text-center">
             <h3 className="text-xl font-semibold mb-2">Contacto</h3>

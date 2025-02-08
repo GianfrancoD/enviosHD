@@ -16,7 +16,7 @@ export const Tracking = () => {
       className="py-24 bg-gradient-to-b from-white to-blue-50"
     >
       <div className="container mx-auto px-4 relative">
-        <h2 className="text-5xl font-bold text-center mb-6 text-blue-500">
+        <h2 className="text-5xl font-bold text-center mb-6 bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent">
           Seguimiento de Envío
         </h2>
         <p className="text-gray-400 max-w-2xl mx-auto mb-12 text-center text-lg">
@@ -52,7 +52,7 @@ export const Tracking = () => {
             </div>
             <button
               type="submit"
-              className={`w-full bg-blue-500 text-white py-3 px-4 rounded-lg hover:bg-blue-600 transition-colors text-lg font-semibold ${
+              className={`w-full bg-gradient-to-t from-[#FFAE00] to-[#F9E866] text-black py-3 px-4 rounded-lg hover:bg-gradient-to-t hover:from-[#FFAE00]/80 hover:to-[#F9E866]/80 transition-colors text-lg font-semibold ${
                 state.loading ? "opacity-50 cursor-not-allowed" : ""
               }`}
               disabled={state.loading}
@@ -62,12 +62,12 @@ export const Tracking = () => {
           </form>
           {state.error && <p className="text-red-500">{state.error}</p>}
           {state.trackingResult && state.trackingResult.length > 0 && (
-            <div className="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
-              <h3 className="text-xl font-semibold text-blue-800 mb-2">
+            <div className="mt-8 p-6 bg-[#312760] text-[#fcae60] rounded-lg border-2 border-yellow-500">
+              <h3 className="text-xl font-semibold bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent mb-2">
                 Estado del Envío
               </h3>
               {state.trackingResult.map((item: any, index: number) => (
-                <div key={index} className="mb-4">
+                <div key={index} className="mb-4 text-white">
                   <p>
                     <strong>Estado:</strong> {item.estado}
                   </p>
@@ -83,7 +83,7 @@ export const Tracking = () => {
           )}
           {state.trackingResult && state.trackingResult.length === 0 && (
             <div className="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
-              <h3 className="text-xl font-semibold text-blue-800 mb-2">
+              <h3 className="text-xl font-semibold text-yellow-800 mb-2">
                 Estado del Envío
               </h3>
               <p>

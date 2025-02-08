@@ -10,7 +10,7 @@ export const Offices = () => {
   }
   const offices: Offices[] = [
     {
-      city: "Distrito de los olivos",
+      city: "Los olivos",
       Ofice: "Oficina Principal",
       address:
         "Av Naranjal con Av. universitaria Asoc. el Molino. Mz. A Lt. 30. A espaldas del Grifo Primax, a 50 Metros del Colegio Señor de los Milagros",

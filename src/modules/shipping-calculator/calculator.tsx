@@ -84,7 +84,7 @@ export function ShippingCalculator() {
   return (
     <section id="calculator" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-blue-500">
+        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent">
           Calculadora de Envíos
         </h2>
         <p className="text-gray-400 max-w-[50vw] mx-auto my-5 text-center">
@@ -101,8 +101,8 @@ export function ShippingCalculator() {
                   onClick={() => setShippingType(type)}
                   className={`px-4 py-2 rounded-full ${
                     shippingType === type
-                      ? "bg-blue-500 text-blue-200"
-                      : "bg-blue-500 text-blue-200 hover:bg-blue-700 hover:text-white"
+                      ? "bg-gradient-to-t from-[#FFAE00]/30 to-[#F9E866]/30 text-black/20"
+                      : "bg-gradient-to-t from-[#FFAE00] to-[#F9E866] text-black hover:text-white drop-shadow-lg"
                   }`}
                 >
                   {type.charAt(0).toUpperCase() + type.slice(1)}
@@ -123,7 +123,7 @@ export function ShippingCalculator() {
                   id="origin"
                   value={originCountry}
                   onChange={(e) => setOriginCountry(e.target.value as Country)}
-                  className="w-full p-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
+                  className="w-full p-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary ursor-pointer"
                 >
                   <option value="">Seleccionar origen</option>
                   <option value="colombia">Colombia</option>
@@ -228,7 +228,7 @@ export function ShippingCalculator() {
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
+              className="w-full bg-gradient-to-t from-[#FFAE00] to-[#F9E866] text-gray-700 py-2 px-4 rounded-md hover:from-[#FFAE00]/80 hover:to-[#F9E866]/80 transition-colors"
             >
               Calcular Costo
             </button>
