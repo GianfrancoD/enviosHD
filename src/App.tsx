@@ -12,7 +12,7 @@ import { ShippingCalculator } from "./modules/shipping-calculator/calculator";
 import { SimpleSteps } from "./modules/simple-steps/simple";
 import { SocialMedia } from "./modules/social/social-media";
 import { Tracking } from "./modules/tracking/trackings";
-// import { WhatsAppButton } from "./modules/WhatsAppButton";
+import { WhatsAppButton } from "./modules/WhatsAppButton";
 
 function App() {
   return (
@@ -48,7 +48,7 @@ function App() {
         <Offices />
       </section>
 
-      {/* <WhatsAppButton phoneNumber="+" /> */}
+      <WhatsAppButton phoneNumber="+51932183374" />
       <SocialMedia />
       <Footer />
     </RootLayout>

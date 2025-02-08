@@ -1,24 +1,25 @@
 import { useState } from "react";
-import banderas from "../../assets/banderas.png";
-import suramerica from "../../assets/suramerica.jpeg";
+// import banderas from "../../assets/banderas.png";
+import suramerica from "../../assets/logoZOOM3.jpeg";
 
 type Images = { src: string; alt: string; title: string; description: string };
 export function FeaturedImages() {
   const [hoveredImage, setHoveredImage] = useState<number | null>(null);
 
   const images: Images[] = [
+    // {
+    //   src: banderas,
+    //   alt: "Logística Global",
+    //   title: "Logística Global",
+    //   description:
+    //     "Soluciones de transporte internacional eficientes y confiables.",
+    // },
     {
-      src: banderas,
+      src: suramerica,
       alt: "Logística Global",
       title: "Logística Global",
       description:
-        "Soluciones de transporte internacional eficientes y confiables.",
-    },
-    {
-      src: suramerica,
-      alt: "Tecnología Avanzada",
-      title: "Tecnología Avanzada",
-      description: "Sistemas de seguimiento y gestión de última generación.",
+        "Soluciones de transporte internacional eficientes y confiables",
     },
   ];
 

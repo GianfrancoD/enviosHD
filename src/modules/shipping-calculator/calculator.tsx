@@ -239,7 +239,7 @@ export function ShippingCalculator() {
                 <span className="font-medium text-gray-700">
                   Costo Estimado:
                 </span>
-                <span className="text-2xl font-bold text-blue-500">
+                <span className="text-2xl font-bold text-gray-700 bg-gradient-to-b from-white via-yellow-400 to-white rounded-lg py-3 px-4">
                   ${result.toLocaleString()}
                 </span>
               </div>

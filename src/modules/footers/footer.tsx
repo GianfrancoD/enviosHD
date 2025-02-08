@@ -7,7 +7,7 @@ export function Footer() {
   // };
   return (
     <footer
-      className="bg-gradient-to-b from-blue-900 to-blue-500 text-white py-16"
+      className="bg-gradient-to-t from-yellow-500 text-gray-500/90 py-16"
       id="footer"
     >
       <div className="container mx-auto px-4">
@@ -18,7 +18,7 @@ export function Footer() {
               alt="Suramérica Cargo"
               className="h-[15vh] max-[768px]:h-[10vh] w-auto max-[768px]:w-[50vw] bg-white rounded-xl"
             />
-            <p className="text-blue-200 max-[768px]:text-center">
+            <p className="text-gray-500/90 max-[768px]:text-center">
               Conectando negocios globalmente con soluciones logísticas
               innovadoras.
             </p>
@@ -29,7 +29,7 @@ export function Footer() {
               <li>
                 <a
                   href="#services"
-                  className="text-blue-200 hover:text-white transition-colors"
+                  className="text-gray-500/90 hover:text-white transition-colors"
                 >
                   Envío Aéreo
                 </a>
@@ -37,7 +37,7 @@ export function Footer() {
               <li>
                 <a
                   href="#services"
-                  className="text-blue-200 hover:text-white transition-colors"
+                  className="text-gray-500/90 hover:text-white transition-colors"
                 >
                   Envío Marítimo
                 </a>
@@ -45,7 +45,7 @@ export function Footer() {
               <li>
                 <a
                   href="#services"
-                  className="text-blue-200 hover:text-white transition-colors"
+                  className="text-gray-500/90 hover:text-white transition-colors"
                 >
                   Envío Terrestre
                 </a>
@@ -92,7 +92,7 @@ export function Footer() {
 
               <a
                 href="https://www.instagram.com/envioshd_oficial/"
-                className="bg-blue-700 p-2 rounded-full hover:bg-blue-600 transition-colors"
+                className="bg-gradient-to-t from-yellow-500 text-gray-500/90 p-2 rounded-full hover:bg-blue-200 transition-colors"
               >
                 <Instagram size={20} />
                 <span className="sr-only">Instagram</span>
@@ -100,7 +100,8 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-blue-700 text-center text-sm text-blue-300">
+
+        <div className="mt-12 pt-8 border-t border-blue-700 text-center text-sm text-black">
           © {new Date().getFullYear()} EnviosHD. Todos los derechos reservados.
         </div>
       </div>
