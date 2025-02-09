@@ -108,8 +108,20 @@ export const Footer: React.FC<Image> = ({ url }) => {
             </div>
           </div>
         </div>
-
-        <div className="mt-12 pt-8 border-t border-orange-700 text-center text-sm text-black font-black">
+        <br />
+        <div className="min-h-screen-md min-w-screen-md text-black">
+          <ul className="flex flex-row justify-center space-x-4 text-5xl">
+            <li>🇻🇪</li>
+            <li>🇪🇸</li>
+            <li>🇵🇪</li>
+            <li>🇺🇸</li>
+            <li>🇨🇭</li>
+            <li>🇧🇷</li>
+            <li>🇲🇽</li>
+            <li>🇩🇪</li>
+          </ul>
+        </div>
+        <div className="mt-5 pt-8 border-t border-orange-700 text-center text-sm text-black font-black">
           © {new Date().getFullYear()} EnviosHD. Todos los derechos reservados.
         </div>
       </div>
