@@ -7,6 +7,7 @@ import { Hero } from "./modules/heros/hero";
 import RootLayout from "./modules/layout";
 import { Navbar } from "./modules/navbar/nav";
 import { Offices } from "./modules/offices/office";
+import { Quality } from "./modules/quality/rendimiento";
 import { Calidad } from "./modules/responsability/calidad";
 import { Services } from "./modules/servis/services";
 import { ShippingCalculator } from "./modules/shipping-calculator/calculator";
@@ -38,7 +39,7 @@ function App() {
       <section id="responsabilidad" className="py-0">
         <Calidad
           urls={
-            "https://cdn.pixabay.com/photo/2019/03/14/20/22/sunset-4055837_1280.jpg"
+            "https://cdn.pixabay.com/photo/2019/11/05/07/47/port-4602965_1280.jpg"
           }
         />
       </section>
@@ -53,13 +54,25 @@ function App() {
 
       <FeaturedImages />
 
+      <section id="calidad">
+        <Quality
+          url={
+            "https://cdn.pixabay.com/photo/2023/01/03/07/26/logistics-7693789_1280.jpg"
+          }
+        />
+      </section>
+
       <section id="oficinas" className="py-0">
         <Offices />
       </section>
 
       <WhatsAppButton phoneNumber="+51932183374" />
       <SocialMedia />
-      <Footer />
+      <Footer
+        url={
+          "https://cdn.pixabay.com/photo/2022/12/29/00/41/cargo-ship-7683972_1280.jpg"
+        }
+      />
     </RootLayout>
   );
 }

@@ -13,7 +13,7 @@ const redes: Redes[] = [
     id: 2,
     name: "instagram",
     icon: <Instagram size={32} className="text-black/50" />,
-    url: "envioszoom",
+    url: "envioshd_oficial",
   },
 ];
 

@@ -11,7 +11,7 @@ export const Calidad: React.FC<Image> = ({ urls }) => {
           backgroundImage: `url('${urls}')`,
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30  " />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90  to-yellow-500/20  " />
 
       <div className="relative container mx-auto px-4 py-12 text-center z-10 flex flex-col items-center justify-center h-full">
         <ul className="text-xl z-50">
@@ -21,7 +21,7 @@ export const Calidad: React.FC<Image> = ({ urls }) => {
               100% de Responsabilidad
             </p>
           </li>
-          <li className="text-white bg-clip-text text-transparent font-thin text-md mx-20 my-10">
+          <li className="text-white bg-clip-text text-transparent font-thin text-md max-[425px]:mx-10 max-[320px]:mx-auto mx-20 my-10">
             Miles de proyectos han hecho de nuestra empresa una empresa líder en
             el área. Respaldamos o prometemos brindar un servicio oportuno y de
             calidad a nuestros clientes.
