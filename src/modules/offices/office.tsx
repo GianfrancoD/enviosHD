@@ -23,10 +23,10 @@ export const Offices = () => {
     <section id="offices" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent mb-4">
+          <h2 className="text-4xl font-bold bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent mb-4 font-serif">
             Nuestras Oficinas
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto font-thin">
             Estamos presentes en las principales ciudades para atender tus
             necesidades logísticas
           </p>
@@ -35,7 +35,7 @@ export const Offices = () => {
           {offices.map((office, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-lg transition-all hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden"
+              className="bg-white p-6 rounded-lg shadow-lg transition-all hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden font-thin"
             >
               <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-t from-[#FFAE00]/20 to-[#F9E866]/20 rounded-bl-full"></div>
               <div className="flex items-center mb-4">

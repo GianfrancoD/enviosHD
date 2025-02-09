@@ -16,14 +16,14 @@ export const Tracking = () => {
       className="py-24 bg-gradient-to-b from-white to-blue-50"
     >
       <div className="container mx-auto px-4 relative">
-        <h2 className="text-5xl font-bold text-center mb-6 bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent">
+        <h2 className="text-5xl font-bold text-center mb-6 bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent font-serif">
           Seguimiento de Envío
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-12 text-center text-lg">
+        <p className="text-gray-400 max-w-2xl mx-auto mb-12 text-center text-lg font-thin">
           Rastrea tu envío en tiempo real y mantente informado sobre su
           ubicación y estado actual.
         </p>
-        <div className="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-2xl">
+        <div className="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-2xl font-serif">
           <form
             onSubmit={(e) => handleServices(e, state, setState)}
             className="space-y-6"
@@ -31,7 +31,7 @@ export const Tracking = () => {
             <div>
               <label
                 htmlFor="tracking-number"
-                className="block text-sm font-medium text-gray-700 mb-1"
+                className="block text-sm text-gray-700 mb-1 font-thin"
               >
                 Número de Seguimiento
               </label>
@@ -62,7 +62,7 @@ export const Tracking = () => {
           </form>
           {state.error && <p className="text-red-500">{state.error}</p>}
           {state.trackingResult && state.trackingResult.length > 0 && (
-            <div className="mt-8 p-6 bg-[#312760] text-[#fcae60] rounded-lg border-2 border-yellow-500">
+            <div className="mt-8 p-6 bg-[#312760] text-[#fcae60] rounded-lg border-2 border-yellow-500 font-thin">
               <h3 className="text-xl font-semibold bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent mb-2">
                 Estado del Envío
               </h3>

@@ -84,17 +84,17 @@ export function ShippingCalculator() {
   return (
     <section id="calculator" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent">
+        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent font-serif">
           Calculadora de Envíos
         </h2>
-        <p className="text-gray-400 max-w-[50vw] mx-auto my-5 text-center">
+        <p className="text-gray-400 max-w-[50vw] mx-auto my-5 text-center font-thin">
           Con nuestra calculadora, podrás conocer el costo de tu envío de forma
           rápida y sencilla. Solo elige el tipo de cálculo e ingresa las
           dimensiones y el peso de tu caja.
         </p>
         <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
           <div className="mb-6">
-            <div className="flex justify-center space-x-4">
+            <div className="flex justify-center space-x-4 font-serif">
               {["aereo", "maritimo", "terrestre"].map((type) => (
                 <button
                   key={type}
@@ -110,7 +110,7 @@ export function ShippingCalculator() {
               ))}
             </div>
           </div>
-          <form onSubmit={calculateShipping} className="space-y-6">
+          <form onSubmit={calculateShipping} className="space-y-6 font-serif">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label
@@ -123,7 +123,7 @@ export function ShippingCalculator() {
                   id="origin"
                   value={originCountry}
                   onChange={(e) => setOriginCountry(e.target.value as Country)}
-                  className="w-full p-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary ursor-pointer"
+                  className=" w-full p-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary ursor-pointer"
                 >
                   <option value="">Seleccionar origen</option>
                   <option value="colombia">Colombia</option>
@@ -186,6 +186,7 @@ export function ShippingCalculator() {
                 >
                   Dimensiones (cm)
                 </label>
+
                 <div className="grid grid-cols-3 gap-2">
                   <input
                     type="number"
@@ -234,7 +235,7 @@ export function ShippingCalculator() {
             </button>
           </form>
           {result && (
-            <div className="mt-6 p-4 bg-accent/10 rounded-lg text-secondary">
+            <div className="mt-6 p-4 bg-accent/10 rounded-lg text-secondary font-serif">
               <div className="flex items-center justify-between">
                 <span className="font-medium text-gray-700">
                   Costo Estimado:

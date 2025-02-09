@@ -23,10 +23,10 @@ export function SocialMedia() {
       <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-t from-[#FFAE00]/50 to-[#F9E866]/50 rounded-full -ml-32 -mt-32 opacity-30"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-gray-500/40 rounded-full -mr-32 -mb-32 opacity-30"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl font-bold text-center bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent mb-4">
+        <h2 className="text-4xl font-bold text-center bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent mb-4 font-serif">
           Conéctate con Nosotros
         </h2>
-        <p className="text-xl text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+        <p className="text-xl text-center text-gray-400 mb-12 max-w-2xl mx-auto font-thin">
           Mantente informado sobre nuestras últimas novedades y ofertas
           especiales.
         </p>

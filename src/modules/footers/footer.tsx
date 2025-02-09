@@ -7,7 +7,7 @@ export function Footer() {
   // };
   return (
     <footer
-      className="bg-gradient-to-t from-yellow-500 text-gray-500/90 py-16"
+      className="bg-gradient-to-t from-yellow-500 text-gray-500/90 py-16 font-serif"
       id="footer"
     >
       <div className="container mx-auto px-4">
@@ -101,7 +101,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-blue-700 text-center text-sm text-black">
+        <div className="mt-12 pt-8 border-t border-orange-700 text-center text-sm text-black font-black">
           © {new Date().getFullYear()} EnviosHD. Todos los derechos reservados.
         </div>
       </div>

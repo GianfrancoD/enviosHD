@@ -33,10 +33,10 @@ export function Services() {
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-gray-500/20 rounded-full -mr-32 -mb-32 opacity-30"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent mb-4">
+          <h2 className="text-4xl font-bold bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent mb-4 font-serif">
             Nuestros Servicios
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto font-thin">
             Soluciones logísticas integrales adaptadas a sus necesidades
             globales
           </p>
@@ -45,7 +45,7 @@ export function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 font-serif"
             >
               <div className="w-16 h-16 bg-gradient-to-t from-[#FFAE00] to-[#F9E866] rounded-full flex items-center justify-center mb-6 mx-auto">
                 {React.cloneElement(service.icon, {

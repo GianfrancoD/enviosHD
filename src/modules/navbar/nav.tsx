@@ -49,7 +49,7 @@ export function Navbar() {
           </nav>
           <button
             onClick={() => scrollToAll("footer")}
-            className="hidden md:block bg-gradient-to-t from-[#FFAE00] to-[#F9E866] text-black px-6 py-2 rounded-full hover:bg-yellow-500 transition-colors "
+            className="hidden md:block bg-gradient-to-t from-[#FFAE00] to-[#F9E866] text-black px-6 py-2 rounded-full hover:bg-yellow-500 transition-colors font-serif"
           >
             Contacto
           </button>
@@ -84,7 +84,7 @@ export function Navbar() {
             ))}
             <button
               onClick={() => scrollToAll("footer")}
-              className="mt-4 bg-gradient-to-t from-[#FFAE00] to-[#F9E866] text-black px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
+              className="mt-4 bg-gradient-to-t from-[#FFAE00] to-[#F9E866] text-black px-6 py-2 rounded-full hover:bg-blue-600 transition-colors font-serif"
             >
               Contacto
             </button>
