@@ -1,7 +1,7 @@
 // src/app/page.tsx o donde estés definiendo tus rutas
 import "./App.css";
 import { AboutUs } from "./modules/about/about-us";
-import { FeaturedImages } from "./modules/focus/focus";
+// import { FeaturedImages } from "./modules/focus/focus";
 import { Footer } from "./modules/footers/footer";
 import { Hero } from "./modules/heros/hero";
 import RootLayout from "./modules/layout";
@@ -52,7 +52,7 @@ function App() {
         <ShippingCalculator />
       </section>
 
-      <FeaturedImages />
+      {/* <FeaturedImages /> */}
 
       <section id="calidad">
         <Quality

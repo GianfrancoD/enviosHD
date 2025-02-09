@@ -110,7 +110,7 @@ export const Footer: React.FC<Image> = ({ url }) => {
         </div>
         <br />
         <div className="min-h-screen-md min-w-screen-md text-black">
-          <ul className="flex flex-row justify-center space-x-4 text-5xl">
+          <ul className="flex flex-row justify-center space-x-4 text-5xl max-[425px]:text-3xl max-[320px]:text-2xl">
             <li>🇻🇪</li>
             <li>🇪🇸</li>
             <li>🇵🇪</li>

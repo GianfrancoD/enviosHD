@@ -5,10 +5,10 @@ export function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://cdn.pixabay.com/photo/2016/04/30/08/35/aircraft-1362586_1280.jpg') ",
+            "url('https://cdn.pixabay.com/photo/2017/12/15/22/25/hamburg-3021820_1280.jpg') ",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#FFAE00]/30 to-black/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/70" />
 
       <div className="relative container mx-auto px-4 py-12 text-center z-10 flex flex-col items-center justify-center h-full">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-md font-serif">
