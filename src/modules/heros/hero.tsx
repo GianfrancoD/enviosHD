@@ -1,12 +1,14 @@
 export function Hero() {
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('https://cdn.pixabay.com/photo/2017/12/15/22/25/hamburg-3021820_1280.jpg') ",
-        }}
+      <img
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat w-full h-full"
+        src="https://cdn.pixabay.com/photo/2017/12/15/22/25/hamburg-3021820_1280.jpg"
+        alt="Envios maritimos a nivel internacional, con total seguridad de parte de la empresa de envios"
+        // style={{
+        //   backgroundImage:
+        //     "url('https://cdn.pixabay.com/photo/2017/12/15/22/25/hamburg-3021820_1280.jpg') ",
+        // }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/70" />
 

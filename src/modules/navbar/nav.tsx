@@ -24,7 +24,7 @@ export function Navbar() {
           >
             <img
               src={logotipos}
-              alt="Suramérica Cargo"
+              alt="EnviosHD seguridad y compromiso asegurdo"
               className="h-[10vh] w-auto rounded-lg"
             />
           </button>

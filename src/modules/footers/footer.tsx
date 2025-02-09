@@ -14,9 +14,11 @@ export const Footer: React.FC<Image> = ({ url }) => {
       className="bg-gradient-to-t from-yellow-500 text-gray-500/90 py-16 font-serif relative"
       id="footer"
     >
-      <div
-        style={{ backgroundImage: `url(${url})` }}
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat -z-50 opacity-10 "
+      <img
+        // style={{ backgroundImage: `url(${url})` }}
+        src={url}
+        alt="los envios son totalmente con seguridad y confianza antes cualquier problema"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat -z-50 opacity-10 w-full h-full "
       />
       <div className="container mx-auto px-4">
         <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-4 max-[768px]:place-content-center max-[768px]:place-items-center">
