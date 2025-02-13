@@ -22,8 +22,8 @@ export function Services() {
     },
     {
       icon: <Package className="h-8 w-8" />,
-      title: "Servicios Express",
-      description: "Servicios de entrega rápidos y seguros",
+      title: "Remesas economicas",
+      description: "Servicios de entrega rápidos, seguros y confiables.",
     },
   ];
 

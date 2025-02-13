@@ -1,6 +1,4 @@
-export const scrollToAll = (scrollAll: string) => {
-  const all = document.getElementById(scrollAll);
-  if (all) {
-    all.scrollIntoView({ behavior: "smooth" });
-  }
+export const scrollToAll = (scrollToAll: string) => {
+  const all = document.getElementById(scrollToAll);
+  if (all) all.scrollIntoView({ behavior: "smooth" });
 };

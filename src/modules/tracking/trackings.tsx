@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { handleServices } from "./services/trackingServices";
 import { TrackingHelper } from "./helpers/trackingHelper";
+import { RailSymbol } from "lucide-react";
 
 export const Tracking = () => {
   const [state, setState] = useState<TrackingHelper>({
@@ -57,6 +58,7 @@ export const Tracking = () => {
               }`}
               disabled={state.loading}
             >
+              <RailSymbol className="size-7 inline-block mx-2 mb-0.5t" />
               {state.loading ? "Cargando..." : "Rastrear Envío"}
             </button>
           </form>

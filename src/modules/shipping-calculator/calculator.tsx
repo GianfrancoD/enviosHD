@@ -1,5 +1,6 @@
 "use client";
 
+import { Calculator, CoinsIcon } from "lucide-react";
 import { useState } from "react";
 
 export function ShippingCalculator() {
@@ -85,6 +86,7 @@ export function ShippingCalculator() {
     <section id="calculator" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent font-serif">
+          <Calculator className=" inline-block mx-2 mb-1 w-9 h-9 text-[#f6e777]" />
           Calculadora de Envíos
         </h2>
         <p className="text-gray-400 max-w-[50vw] mx-auto my-5 text-center font-thin">
@@ -231,6 +233,7 @@ export function ShippingCalculator() {
               type="submit"
               className="w-full bg-gradient-to-t from-[#FFAE00] to-[#F9E866] text-gray-700 py-2 px-4 rounded-md hover:from-[#FFAE00]/80 hover:to-[#F9E866]/80 transition-colors"
             >
+              <CoinsIcon className="inline-block mx-2" />
               Calcular Costo
             </button>
           </form>

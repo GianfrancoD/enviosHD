@@ -13,9 +13,9 @@ export function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  // sticky
   return (
-    <header className="sticky top-0 z-50 w-full bg-white text-blue-600 shadow-lg">
+    <nav className={" top-0 z-50 w-full text-black shadow-lg "}>
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <button
@@ -41,7 +41,7 @@ export function Navbar() {
                 onClick={() =>
                   scrollToAll(item.toLowerCase().replace(" ", "-"))
                 }
-                className="text-black hover:text-black/50 transition-colors"
+                className=" hover:text-black/50 transition-colors"
               >
                 {item}
               </button>
@@ -100,6 +100,6 @@ export function Navbar() {
           </nav>
         </div>
       )}
-    </header>
+    </nav>
   );
 }

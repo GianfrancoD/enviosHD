@@ -18,13 +18,13 @@ export const Calidad: React.FC<Image> = ({ urls }) => {
           <li className="text-4xl text-white font-bold mb-4 leading-tight ">
             Tenga la seguridad de que su carga está en buenas manos
             <p className="bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent">
-              100% de Responsabilidad
+              100% Responsables
             </p>
           </li>
           <li className="text-white bg-clip-text text-transparent font-thin text-md max-[425px]:mx-10 max-[320px]:mx-auto mx-20 my-10">
-            Miles de proyectos han hecho de nuestra empresa una empresa líder en
-            el área. Respaldamos o prometemos brindar un servicio oportuno y de
-            calidad a nuestros clientes.
+            Muchos de proyectos se han concretado gracias a la buena gestion de
+            nuestra empresa, líder en el área. Estamos comprometidos brindar un
+            servicio oportuno y de calidad a cada nuestros clientes.
           </li>
         </ul>
       </div>

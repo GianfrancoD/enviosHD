@@ -11,14 +11,18 @@ export function AboutUs() {
           Quiénes Somos
         </h2>
         <p className="text-xl text-center text-gray-400 mb-16 max-w-2xl mx-auto font-thin">
-          Más de dos décadas de excelencia en logística internacional
+          ENVIOS HD una empresa dedicada al envío y recepcion de encomiendas
+          principalmente entre Venezuela y Perú, trabaja tambien con algunos
+          paises de latinoamerica e internacionalmente , contamos con una amplia
+          trayectoria que le permite garantizar la seguridad y puntualidad en
+          cada entrega.
         </p>
         <div className="grid md:grid-cols-3 gap-12 font-serif">
           {[
             {
               title: "Experiencia",
               description:
-                "Más de dos décadas brindando excelencia en logística internacional.",
+                "5 años brindando excelencia logística internacional.",
               icon: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

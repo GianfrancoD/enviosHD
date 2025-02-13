@@ -1,4 +1,4 @@
-import { Clipboard, Package, Truck } from "lucide-react";
+import { Clipboard, Package, Truck, Waypoints } from "lucide-react";
 
 export function SimpleSteps() {
   const steps = [
@@ -27,7 +27,8 @@ export function SimpleSteps() {
       <div className="absolute inset-0 bg-grid-blue-100/[0.2] bg-[size:20px_20px]" />
       <div className="relative container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent font-serif">
-          3 Sencillos Pasos
+          <Waypoints className="text-[#f4de39] w-11 h-11 inline-block mx-2" />3
+          Sencillos Pasos
         </h2>
         <p className="text-xl text-center mb-16 max-w-2xl mx-auto text-gray-400 font-thin">
           Descubre cómo nuestro proceso simplifica tus envíos internacionales

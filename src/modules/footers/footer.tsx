@@ -1,5 +1,12 @@
 import { Instagram, MapPin, Phone, Mail } from "lucide-react";
 import logotipoFooter from "../../assets/logoHD.jpeg";
+import { scrollToAll } from "../../services/scrollServices";
+import banderaItaliana from "../../assets/banderaITALIA2.png";
+import banderaAlemana from "../../assets/banderaALEMAN2.png";
+import banderaChina from "../../assets/banderaCHINA2.png";
+import banderaMexicana from "../../assets/banderaMEXICANA2.png";
+import banderaUsa from "../../assets/banderaUSA2.png";
+import banderaBrasil from "../../assets/banderaBRASIL2.png";
 
 type Image = {
   url: string;
@@ -9,6 +16,7 @@ export const Footer: React.FC<Image> = ({ url }) => {
   // const Viewes = () => {
   //   window.open("/En ENVIOS HD.pdf", "_blank");
   // };
+
   return (
     <footer
       className="bg-gradient-to-t from-yellow-500 text-gray-500/90 py-16 font-serif relative"
@@ -37,28 +45,28 @@ export const Footer: React.FC<Image> = ({ url }) => {
             <h3 className="text-xl font-semibold mb-2">Servicios</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#services"
+                <button
+                  onClick={() => scrollToAll("calculadora")}
                   className="text-gray-500/90 hover:text-white transition-colors"
                 >
                   Envío Aéreo
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="#services"
+                <button
+                  onClick={() => scrollToAll("calculadora")}
                   className="text-gray-500/90 hover:text-white transition-colors"
                 >
                   Envío Marítimo
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="#services"
+                <button
+                  onClick={() => scrollToAll("calculadora")}
                   className="text-gray-500/90 hover:text-white transition-colors"
                 >
                   Envío Terrestre
-                </a>
+                </button>
               </li>
             </ul>
             {/* <div className="relative mt-12 pt-5 border-t border-white/50 text-sm min-w-[320px]:w-28 w-28">
@@ -75,7 +83,7 @@ export const Footer: React.FC<Image> = ({ url }) => {
             <ul className="space-y-2">
               <li className="flex items-center max-[768px]:justify-center">
                 <Phone size={18} className="mr-2" />
-                <span>932183374-929185849</span>
+                <span>932183374-966473405</span>
               </li>
               <li className="flex items-center max-[768px]:flex max-[768px]:justify-center">
                 <Mail size={18} className="mr-2" />
@@ -112,15 +120,51 @@ export const Footer: React.FC<Image> = ({ url }) => {
         </div>
         <br />
         <div className="min-h-screen-md min-w-screen-md text-black">
-          <ul className="flex flex-row justify-center space-x-4 text-5xl max-[425px]:text-3xl max-[320px]:text-2xl">
-            <li>🇻🇪</li>
-            <li>🇪🇸</li>
-            <li>🇵🇪</li>
-            <li>🇺🇸</li>
-            <li>🇨🇭</li>
-            <li>🇧🇷</li>
-            <li>🇲🇽</li>
-            <li>🇩🇪</li>
+          <ul className="flex flex-row justify-center items-center space-x-4 min-[768px]:text-5xl max-[425px]:text-2xl max-[320px]:text-base">
+            {/* <li>🇻🇪</li> */}
+            <li>
+              <img
+                className="w-10 h-10"
+                src={banderaItaliana}
+                alt="bandera de italia"
+              />
+            </li>
+            <li>
+              <img
+                className="w-h-12 h-12"
+                src={banderaUsa}
+                alt="bandera de estados unidos"
+              />
+            </li>
+            <li>
+              <img
+                className="w-10 h-10 "
+                src={banderaMexicana}
+                alt="bandera de mexico"
+              />
+            </li>
+            <li>
+              <img
+                className="w-10 h-10 "
+                src={banderaBrasil}
+                alt="bandera de brasil"
+              />
+            </li>
+
+            <li>
+              <img
+                className="w-12 h-12"
+                src={banderaAlemana}
+                alt="bandera de alemania"
+              />
+            </li>
+            <li>
+              <img
+                className="w-10 h-10"
+                src={banderaChina}
+                alt="bandera de china"
+              />
+            </li>
           </ul>
         </div>
         <div className="mt-5 pt-8 border-t border-orange-700 text-center text-sm text-black font-black">
