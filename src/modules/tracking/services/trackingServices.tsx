@@ -28,6 +28,8 @@ export const handleServices = async (
         setState((prev) => ({
           ...prev,
           trackingResult: data.tracking,
+          guiaCourier: data.guia_courier,
+          guiaReferencia: data.referencia,
           loading: false,
         }));
       } else {

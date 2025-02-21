@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { handleServices } from "./services/trackingServices";
 import { TrackingHelper } from "./helpers/trackingHelper";
-import { RailSymbol } from "lucide-react";
+import { Box, Link2, Loader, RailSymbol } from "lucide-react";
 
 export const Tracking = () => {
   const [state, setState] = useState<TrackingHelper>({
-    trackingNumber: [],
+    trackingNumber: "",
     trackingResult: null,
     loading: false,
     error: null,
+    guiaCourier: null,
+    guiaReferencia: "",
   });
 
   return (
@@ -58,8 +60,17 @@ export const Tracking = () => {
               }`}
               disabled={state.loading}
             >
-              <RailSymbol className="size-7 inline-block mx-2 mb-0.5t" />
-              {state.loading ? "Cargando..." : "Rastrear Envío"}
+              {state.loading ? (
+                <>
+                  <Loader className="size-7 inline-block mx-2 mb-0.5" />
+                  Cargando...
+                </>
+              ) : (
+                <>
+                  <RailSymbol className="size-7 inline-block mx-2 mb-0.5t" />
+                  Rastrear Envío
+                </>
+              )}
             </button>
           </form>
           {state.error && <p className="text-red-500">{state.error}</p>}
@@ -81,6 +92,28 @@ export const Tracking = () => {
                   </p>
                 </div>
               ))}
+              {state.guiaCourier && (
+                <div className="bg-gradient-to-t from-[#FFAE00] to-[#F9E866] px-9 py-2 rounded relative ">
+                  <div className="flex flex-row flex-wrap max-[425px]:gap-0 max-[425px]:text-sm max-[425px]:justify-center gap-1 ">
+                    <Box className=" absolute left-2.5 top-1.5 max-[375px]:top-4 min-[768px]:top-2 text-gray-700" />
+                    <strong className="text-gray-700">Guía de Retiro:</strong>
+                    <p className="text-gray-700">{state.guiaCourier}</p>
+                  </div>
+                </div>
+              )}
+              {state.guiaReferencia && (
+                <div className=" px-9 py-2 relative rounded ">
+                  <div className="flex flex-wrap max-[425px]:gap-0 max-[425px]:text-sm max-[425px]:justify-center gap-1">
+                    <Link2 className=" absolute left-2.5 top-1.5 max-[375px]:top-4 min-[768px]:top-2" />
+                    <strong className="bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent font-black">
+                      Referencia:
+                    </strong>
+                    <p className="bg-gradient-to-t from-[#FFAE00] to-[#F9E866] bg-clip-text text-transparent">
+                      {state.guiaReferencia}
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
           )}
           {state.trackingResult && state.trackingResult.length === 0 && (
