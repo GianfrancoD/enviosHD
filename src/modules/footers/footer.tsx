@@ -87,7 +87,7 @@ export const Footer: React.FC<Image> = ({ url }) => {
               </li>
               <li className="flex items-center max-[768px]:flex max-[768px]:justify-center">
                 <Mail size={18} className="mr-2" />
-                <span>None</span>
+                <span>envioshd.oficial@gmail.com</span>
               </li>
               <li className="flex items-center max-[768px]:flex max-[768px]:justify-center">
                 <MapPin size={18} className="mr-2" />
