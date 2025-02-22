@@ -12,11 +12,13 @@ export function WhatsAppButton({ phoneNumber }: WhatsAppButtonProps) {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 z-50 flex items-center justify-center"
+      className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg z-50 flex items-center justify-center transition-all duration-300 animate-pulse-ring"
       aria-label="Chat on WhatsApp"
     >
-      <WhatsappIcon size={28} />
-      <span className="sr-only">Chat con WhatsApp</span>
+      <div className="relative">
+        <div className="absolute inset-0 rounded-full bg-green-500 opacity-75 animate-ping"></div>
+        <WhatsappIcon size={28} />
+      </div>
     </a>
   );
 }

@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* <p className="absolute top-20 text-white z-50">HOLA</p> */}
-      <ul className="absolute flex top-16 z-50 justify-center items-center space-x-4 min-[768px]:text-5xl max-[425px]:text-2xl max-[320px]:text-base">
+      <ul className="absolute flex top-16 z-40 justify-center items-center space-x-4 min-[768px]:text-5xl max-[425px]:text-2xl max-[320px]:text-base">
         <li>
           <img
             className="max-[425px]:w-10 max-[425px]:h-10 w-16 h-16"

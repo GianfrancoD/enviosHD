@@ -15,7 +15,7 @@ export function Navbar() {
   };
   // sticky
   return (
-    <nav className={" top-0 z-50 w-full text-black shadow-lg "}>
+    <nav className={"sticky top-0 z-50 w-full text-black bg-white shadow-lg "}>
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <button
